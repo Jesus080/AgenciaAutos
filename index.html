@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troncomovil SA de CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form class="content-form" id="Autos">
+        
+        <div class="card">
+            <div class="imagenes">
+                <img src="css/marcasalemanes.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>.:Origen Aleman:.</h2>
+                <P>Estos Autos tienen los siguientes aumentos en su compra.</P>
+                    <p>* 45% Aumento de costo de compra.</p>
+                    <p>* 20% Origen Aleman.</p>
+                    <p> * 16% IVA.</p>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagenes">
+                <img src="css/marcasjapones.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>.:Origen Japones:.</h2>
+                <P>Estos Autos tienen los siguientes aumentos en su compra.</P>
+                    <p>* 45% Aumento de costo de compra.</p>
+                    <p>* 30% Origen Aleman.</p>
+                    <p> * 16% IVA.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagenes">
+                <img src="css/marcasitalianos.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>.:Origen Italiano:.</h2>
+                <P>Estos Autos tienen los siguientes aumentos en su compra.</P>
+                    <p>* 45% Aumento de costo de compra.</p>
+                    <p>* 15% Origen Aleman.</p>
+                    <p> * 16% IVA.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagenes">
+                <img src="css/marcaseu.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>.:Origen E.U:.</h2>
+                <P>Estos Autos tienen los siguientes aumentos en su compra.</P>
+                    <p>* 45% Aumento de costo de compra.</p>
+                    <p>* 8% Origen Aleman.</p>
+                    <p> * 16% IVA.</p>
+            </div>
+        </div>
+      
+        
+    </form>
+
+    <form class="content-formDatos" id="frmAutos">
+        <h3 class="modern-title">.::Agencia Troncomovil::.</h3>
+        <input id="txtmarcaAuto" class="controles" placeholder="Ingrese Marca del Automovil">
+        <select id="txtorigenAuto" class="controles" size="1">
+            <option value="noSelecciona">--Seleccione origen del automovil--</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Japon">Japon</option>
+            <option value="Italia">Italia</option>
+            <option value="EU">Estados Unidos</option>
+        </select>
+        <input id="txtPrecioAuto" class="controles" type="number" placeholder="Ingrese costo del Automovil">
+        <input id="txtcomprador" class="controles" placeholder="Ingrese Nombre del Comprador">
+        
+        <button class="controles" id="botones" type="submit">Generar Factura</button>
+        <button class="controles"  id="botones" type="reset">Cancelar</button>
+        <h5 id=""></h5>
+    </form>
+
+    <form class="content-formFactura">
+        <h3 class="modern-title" >.::Factura de Datos::.</h3>
+         
+        
+        <h5 class="styleresultado" id="resultado"></h5>
+    </form>
+    <script src="js/autos.js"></script>
+</body>
+</html>
